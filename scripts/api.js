@@ -252,7 +252,7 @@ let awsSns = function (options) {
 
 function setApiUri(options) {
     let url = options.path || "";
-    options.url = "https://sns."+config.get("region")+".amazonaws.com" + url;
+    options.url = "https://sns." + config.get("region") + ".amazonaws.com" + url;
     sys.logs.debug('[awssns] Set url: ' + options.path + "->" + options.url);
     return options;
 }
